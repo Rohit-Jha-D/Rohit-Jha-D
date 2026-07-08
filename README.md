@@ -4,11 +4,6 @@
   <b>💻 Data Scientist & AI-ML Engineer | 🛡️ Cybersecurity Analytics Professional</b>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Rohit-Jha-D&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" height="180" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rohit-Jha-D&theme=tokyonight" alt="GitHub Streak" height="180" />
-</p>
-
 ---
 
 ### 🚀 About Me
@@ -46,17 +41,10 @@
 
 ---
 
-### 💻 Public Repositories & Focus Areas
+### 🎯 Public Repositories & Focus Areas
 - 🔍 **Anomaly & Fraud Detection Systems:** ML-driven models designed to capture security anomalies and risk factors.
 - 📈 **Performance & Sales Analytics:** Analytical dashboards evaluating complex operational metrics and performance data.
 - ⚙️ **ETL & Data Architecture:** Automation scripts written to scrape, clean, parse, and structure unorganized data.
-
----
-
-### 📊 Language Insights
-<p align="left">
-  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api/top-langs/?username=Rohit-Jha-D&layout=compact&theme=tokyonight" alt="Top Languages" />
-</p>
 
 ---
 
