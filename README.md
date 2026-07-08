@@ -1,54 +1,49 @@
-# Hi there, I'm Rohit Jha 👋
+# Hi there, I'm Rohit Jha D 👋
 
 <p align="center">
-  <img src="https://blog.twitch.tv/assets/uploads/59e66cbba2b8341656b2cf72_1.gif" width="600" alt="Developer Animation" />
+  <img src="https://blog.twitch.tv/assets/uploads/59e66cbba2b8341656b2cf72_1.gif" width="600" alt="Developer Workspace Animation" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=7928CA&background=FF000000&center=true&vCenter=true&width=700&lines=Data+Scientist+;AI-ML+Engineer+;Cybersecurity+Analytics+Professional" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=4A90E2&background=FF000000&center=true&vCenter=true&width=750&lines=Building+AI+Solutions+for+Tech%2C+Energy+%26+Finance;Data+Analyst+|+Business+Intelligence+|+Data+Science;Ex-HPCL+|+Ex-C-DAC" alt="Typing SVG" />
 </p>
 
 ---
 
-### 🚀 About Me
-- 📊 **Data Engineering & Analytics:** Experienced in managing data lifecycles, building robust data pipelines, and transforming raw data into actionable enterprise insights.
-- 🤖 **Machine Learning / AI:** Focused on predictive modeling, optimization, and deploying end-to-end ML architectures.
-- 🛡️ **Cybersecurity Analytics:** Domain expertise in network log analysis, User and Entity Behavior Analytics (UEBA), and building anomaly detection mechanisms.
-- 💡 **Business Intelligence:** Proficient in designing advanced interactive executive dashboards to solve complex cross-functional challenges.
+### 🚀 Professional Profile
+- 📊 **Data Science & Analytics:** Dedicated to managing full data lifecycles, optimizing core metrics, and extracting strategic business value from complex datasets.
+- 🤖 **AI & Machine Learning:** Developing predictive models and automated pipelines to solve domain-specific challenges across technology and industrial sectors.
+- 🛡️ **Cybersecurity Insights:** Background in analyzing infrastructure logs and network event telemetry to detect anomalies.
+- 💡 **Business Intelligence:** Proficient in translating stakeholder requirements into highly interactive, decision-ready dashboards.
 
 ---
 
 ### 🅣🅔🅒🅗 🅢🅣🅐🅦🅚
 
-#### 🛠️ Programming & Advanced Analytics
+#### 🛠️ Programming & Data Engineering
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 
-#### 🤖 AI, Machine Learning & Databases
+#### 🤖 Machine Learning & Data Platforms
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&angle=0&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![ElasticSearch](https://img.shields.io/badge/ElasticSearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
 
-#### 📊 Business Intelligence & Big Data Tools
+#### 📊 Enterprise Tools & BI
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![TIBCO Spotfire](https://img.shields.io/badge/Spotfire-FFFFFF?style=for-the-badge&logo=tibco&logoColor=blue)
 ![SAP](https://img.shields.io/badge/SAP-008FD3?style=for-the-badge&logo=sap&logoColor=white)
 
-#### 🌐 DevOps & Version Control
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
 ---
 
-### 🎯 Public Repositories & Focus Areas
-- 🔍 **Anomaly & Fraud Detection Systems:** ML-driven models designed to capture security anomalies and risk factors.
-- 📈 **Performance & Sales Analytics:** Analytical dashboards evaluating complex operational metrics and performance data.
-- ⚙️ **ETL & Data Architecture:** Automation scripts written to scrape, clean, parse, and structure unorganized data.
+### 💻 Key Project Directions
+- 🔍 **Predictive Anomaly Systems:** Security and risk modeling frameworks built to process complex activity telemetry.
+- 📈 **Industrial Optimization Analytics:** Enterprise-level business intelligence architectures designed to evaluate core performance metrics.
+- ⚙️ **Automated Data Pipelines:** Extensible structural workflows written to ingest, cleanse, and organize unmapped records.
 
 ---
 
@@ -60,5 +55,5 @@
 </p>
 
 <p align="center">
-  <i>"Striving for technical perfection, one data point at a time."</i>
+  <i>"Transforming complex data into robust, production-ready solutions."</i>
 </p>
