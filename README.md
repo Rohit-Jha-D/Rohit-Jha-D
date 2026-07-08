@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rohit-Jha-D&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" height="180" />
+  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api?username=Rohit-Jha-D&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" height="180" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rohit-Jha-D&theme=tokyonight" alt="GitHub Streak" height="180" />
 </p>
 
