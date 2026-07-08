@@ -1,7 +1,11 @@
 # Hi there, I'm Rohit Jha 👋
 
 <p align="center">
-  <b>💻 Data Scientist & AI-ML Engineer | 🛡️ Cybersecurity Analytics Professional</b>
+  <img src="https://blog.twitch.tv/assets/uploads/59e66cbba2b8341656b2cf72_1.gif" width="600" alt="Developer Animation" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=7928CA&background=FF000000&center=true&vCenter=true&width=700&lines=Data+Scientist+;AI-ML+Engineer+;Cybersecurity+Analytics+Professional" alt="Typing SVG" />
 </p>
 
 ---
