@@ -72,68 +72,15 @@ print(me.currently())
 
 ## 🛠️ Tech Stack
 
-<table align="center">
-<tr>
-<td align="center" valign="top" width="33%">
+<div align="center">
 
-**Languages & Querying**
+<img src="https://raw.githubusercontent.com/Rohit-Jha-D/Rohit-Jha-D/main/assets/tech-marquee-ltr.svg" width="100%"/>
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://raw.githubusercontent.com/Rohit-Jha-D/Rohit-Jha-D/main/assets/tech-marquee-rtl.svg" width="100%"/>
 
-</td>
-<td align="center" valign="top" width="33%">
+</div>
 
-**BI & Reporting**
-
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/><br/>
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/SAP-0FAAFF?style=for-the-badge&logo=sap&logoColor=white"/>
-
-</td>
-<td align="center" valign="top" width="33%">
-
-**ML & Data Science**
-
-<img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="33%">
-
-**Infra & Data Stores**
-
-<img src="https://img.shields.io/badge/NoSQL-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Elastic_Search-005571?style=for-the-badge&logo=elasticsearch&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>
-
-</td>
-<td align="center" valign="top" width="33%">
-
-**Tools**
-
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
-
-</td>
-<td align="center" valign="top" width="33%">
-
-**Certifications**
-
-<img src="https://img.shields.io/badge/Google_Data_Analytics-4285F4?style=for-the-badge&logo=google&logoColor=white"/><br/>
-<img src="https://img.shields.io/badge/NATS_Certified-1F3864?style=for-the-badge&logo=googlescholar&logoColor=white"/>
-
-</td>
-</tr>
-</table>
+> Row 1 (Languages, BI & Reporting) scrolls left → right. Row 2 (ML/Data Science & Tools) scrolls right → left.
 
 ---
 
@@ -250,5 +197,19 @@ print(me.currently())
    analyzer, fraud detection) to GitHub as repos, then swap the
    `repo=` values in the Featured Projects section to match your
    actual repo names.
+
+5. ANIMATED TECH STACK (scrolling logos, left-to-right / right-to-left)
+   Two files are provided alongside this README:
+     - tech-marquee-ltr.svg
+     - tech-marquee-rtl.svg
+   Upload both into an "assets" folder in your "Rohit-Jha-D" repo, at:
+     Rohit-Jha-D/assets/tech-marquee-ltr.svg
+     Rohit-Jha-D/assets/tech-marquee-rtl.svg
+   The README already references them via raw.githubusercontent.com
+   URLs assuming the default branch is "main" — if your repo's default
+   branch is "master" instead, edit those two URLs in the Tech Stack
+   section accordingly. These are self-animating SVGs (pure CSS
+   keyframes), so no GitHub Action is needed for this one — just
+   uploading the files is enough.
 ======================================================================
 -->
