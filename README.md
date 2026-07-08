@@ -55,7 +55,7 @@
 
 ### 📊 Language Insights
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rohit-Jha-D&layout=compact&theme=tokyonight" alt="Top Languages" />
+  <img src="https://github-readme-stats-git-master-anuraghazra.vercel.app/api/top-langs/?username=Rohit-Jha-D&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>
 
 ---
