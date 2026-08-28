@@ -1,27 +1,30 @@
 <div align="center">
 
-  <!-- Animated Header SVG Banner -->
-  <img src="https://raw.githubusercontent.com/Rohit-Jha-D/Rohit-Jha-D/main/header-banner.svg" width="100%" alt="Rohit Jha D - Animated Banner">
+  <!-- Animated Vector SVG Header Banner -->
+  <img src="header-banner.svg" width="100%" alt="Rohit Jha D Header Banner">
 
   <br><br>
 
-  <!-- Interactive Typing Animation -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&height=50&lines=📊+Data+Analyst+%7C+Power+BI+%7C+SQL+%7C+Python;🚀+Automated+Sales+%26+MIS+Dashboards+%40+HPCL;🛡️+UEBA+ML-Based+Anomaly+Detection+%40+CDAC;🎯+Building+End-to-End+Predictive+Analytics+Pipelines" alt="Typing SVG" />
+  <!-- Interactive Typing Animation (URL-Encoded for GitHub Proxy Compatibility) -->
+  <a href="https://github.com/Rohit-Jha-D">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&height=45&lines=Data+Analyst+%7C+Power+BI+%7C+SQL+%7C+Python;Automated+Sales+%26+MIS+Dashboards+%40+HPCL;UEBA+ML-Based+Anomaly+Detection+%40+CDAC;Building+End-to-End+Predictive+Analytics+Pipelines" alt="Typing SVG" />
   </a>
 
-  <br>
+  <br><br>
 
-  <!-- Social & Quick Action Badges with Glow Aesthetic -->
+  <!-- Social & Quick Action Badges -->
   <a href="https://linkedin.com/in/rohit-jha-d" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
+  &nbsp;
   <a href="mailto:rjha13b@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
+  &nbsp;
   <a href="https://github.com/Rohit-Jha-D">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
+  &nbsp;
   <a href="https://rohit-jha-d.github.io" target="_blank">
     <img src="https://img.shields.io/badge/Live_Portfolio-00F2FE?style=for-the-badge&logo=google-chrome&logoColor=black" alt="Portfolio">
   </a>
@@ -35,21 +38,21 @@
 ### ⚡ Key Metrics & Quantified Impact
 
 <table align="center" width="100%">
-  <tr style="border: none;">
-    <td width="25%" align="center" style="background: rgba(0, 242, 254, 0.05); border-radius: 12px; padding: 15px;">
-      <h1 style="color: #00f2fe; margin: 0;">🚀 35%</h1>
+  <tr>
+    <td width="25%" align="center">
+      <h2>🚀 35%</h2>
       <p><b>Faster BI Reporting</b><br><small>Engineered SQL & Power BI dashboards @ HPCL</small></p>
     </td>
-    <td width="25%" align="center" style="background: rgba(121, 40, 202, 0.05); border-radius: 12px; padding: 15px;">
-      <h1 style="color: #7928ca; margin: 0;">🛡️ 25%</h1>
+    <td width="25%" align="center">
+      <h2>🛡️ 25%</h2>
       <p><b>Higher Detection Accuracy</b><br><small>UEBA Anomaly Detection via Autoencoders @ C-DAC</small></p>
     </td>
-    <td width="25%" align="center" style="background: rgba(79, 172, 254, 0.05); border-radius: 12px; padding: 15px;">
-      <h1 style="color: #4facfe; margin: 0;">📉 40%</h1>
+    <td width="25%" align="center">
+      <h2>📉 40%</h2>
       <p><b>False Positive Cut</b><br><small>End-to-end ML log analysis pipeline @ C-DAC</small></p>
     </td>
-    <td width="25%" align="center" style="background: rgba(0, 242, 254, 0.05); border-radius: 12px; padding: 15px;">
-      <h1 style="color: #00f2fe; margin: 0;">🎯 91%</h1>
+    <td width="25%" align="center">
+      <h2>🎯 91%</h2>
       <p><b>R² Model Precision</b><br><small>Vehicle Performance Forecasting model</small></p>
     </td>
   </tr>
