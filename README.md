@@ -5,7 +5,7 @@
 
   <br><br>
 
-  <!-- Interactive Typing Animation (URL-Encoded for GitHub Proxy Compatibility) -->
+  <!-- Interactive Typing Animation -->
   <a href="https://github.com/Rohit-Jha-D">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FE&center=true&vCenter=true&width=700&height=45&lines=Data+Analyst+%7C+Power+BI+%7C+SQL+%7C+Python;Automated+Sales+%26+MIS+Dashboards+%40+HPCL;UEBA+ML-Based+Anomaly+Detection+%40+CDAC;Building+End-to-End+Predictive+Analytics+Pipelines" alt="Typing SVG" />
   </a>
@@ -208,20 +208,14 @@ timeline
 ### 📊 GitHub Activity & Real-Time Stats
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=Rohit-Jha-D&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" width="400"/>
-      </td>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rohit-Jha-D&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="380"/>
-      </td>
-    </tr>
-  </table>
 
-  <br>
+  <img src="https://github-readme-stats.vercel.app/api?username=Rohit-Jha-D&show_icons=true&theme=tokyonight&hide_border=true" alt="Rohit's GitHub Stats" height="175"/>
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rohit-Jha-D&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" height="175"/>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rohit-Jha-D&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="780"/>
+  <br><br>
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rohit-Jha-D&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="95%"/>
 
 </div>
 
