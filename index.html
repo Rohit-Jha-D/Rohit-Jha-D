@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Jha D | Data Analyst & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Rohit Jha D - Data Analyst, Business Intelligence Specialist, and Machine Learning Engineer. Ex-HPCL MIS Trainee & C-DAC Cybersecurity ML Intern.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js for Interactive Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Canvas Background for Animated Particle Grid -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">&lt;</span>RohitJha<span class="logo-accent"> /&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#impact"><i class="fa-solid fa-chart-line"></i> Impact Metrics</a></li>
+        <li><a href="#skills"><i class="fa-solid fa-layer-group"></i> Tech Stack</a></li>
+        <li><a href="#experience"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#analytics"><i class="fa-solid fa-chart-pie"></i> Visual Demos</a></li>
+        <li><a href="#contact" class="btn-nav"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-toggle" id="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Available for Data Analyst & BI Roles
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Rohit Jha D</span>
+        </h1>
+        <h2 class="hero-subtitle">
+          Data Analyst | BI Specialist | ML Developer
+        </h2>
+        <p class="hero-desc">
+          Turning raw, complex enterprise datasets (SAP, CRIS, SQL) into actionable business intelligence, interactive Power BI dashboards, and ML-powered anomaly detection models.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">
+            <span>Explore Projects</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://linkedin.com/in/rohit-jha-d" target="_blank" class="btn-secondary">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Rohit-Jha-D" target="_blank" class="btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+
+        <div class="hero-tags">
+          <span><i class="fa-solid fa-database"></i> SQL</span>
+          <span><i class="fa-solid fa-chart-simple"></i> Power BI</span>
+          <span><i class="fa-brands fa-python"></i> Python</span>
+          <span><i class="fa-solid fa-brain"></i> Machine Learning</span>
+          <span><i class="fa-solid fa-table"></i> Advanced Excel</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-card-wrapper">
+        <div class="glass-card hero-glass-card">
+          <div class="card-header-bar">
+            <div class="dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="title-tab">rohit_analytics_summary.py</div>
+          </div>
+          <div class="code-body">
+<pre><code><span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">import</span> powerbi_api <span class="code-keyword">as</span> pbi
+
+<span class="code-comment"># Professional Profile Summary</span>
+rohit = {
+    <span class="code-str">"name"</span>: <span class="code-str">"Rohit Jha D"</span>,
+    <span class="code-str">"location"</span>: <span class="code-str">"Chennai, India"</span>,
+    <span class="code-str">"roles"</span>: [<span class="code-str">"Data Analyst"</span>, <span class="code-str">"BI Specialist"</span>],
+    <span class="code-str">"experience"</span>: [
+        <span class="code-str">"HPCL (Govt. of India) - MIS Trainee"</span>,
+        <span class="code-str">"C-DAC - Cybersecurity ML Intern"</span>
+    ],
+    <span class="code-str">"education"</span>: <span class="code-str">"B.Tech IT (CGPA: 8.42)"</span>,
+    <span class="code-str">"key_metric"</span>: <span class="code-str">"35% Faster Reporting @ HPCL"</span>
+}
+
+<span class="code-keyword">print</span>(f<span class="code-str">"Status: Ready to transform data into impact 🚀"</span>)</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Counter Grid -->
+  <section id="impact" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Quantified Work Impact</h2>
+        <p>Measurable achievements from enterprise analytics & machine learning roles</p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="glass-card impact-card">
+          <div class="impact-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="impact-number" data-target="35">%</div>
+          <h3>Faster Reporting Turnaround</h3>
+          <p>Automated SQL queries & Power BI dashboards at HPCL (Hindustan Petroleum Corp Ltd).</p>
+        </div>
+
+        <div class="glass-card impact-card">
+          <div class="impact-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="impact-number" data-target="25">%</div>
+          <h3>Increased Threat Detection</h3>
+          <p>Autoencoders & Isolation Forest UEBA log anomaly detection models at C-DAC.</p>
+        </div>
+
+        <div class="glass-card impact-card">
+          <div class="impact-icon"><i class="fa-solid fa-filter-circle-xmark"></i></div>
+          <div class="impact-number" data-target="40">%</div>
+          <h3>False Positive Reduction</h3>
+          <p>Cut security noise in log analysis pipeline using Elasticsearch & Python.</p>
+        </div>
+
+        <div class="glass-card impact-card">
+          <div class="impact-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div class="impact-number" data-target="91">%</div>
+          <h3>Model R² Forecasting Accuracy</h3>
+          <p>Machine Learning vehicle performance regression model deployed via Flask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Technical Stack & Skill Matrix</h2>
+        <p>Core toolbelt for end-to-end data analysis, visualization, and machine learning</p>
+      </div>
+
+      <div class="skills-wrapper">
+        <div class="skill-category glass-card">
+          <h3><i class="fa-solid fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="skill-pill"><i class="fa-brands fa-r-project"></i> R</span>
+            <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3><i class="fa-solid fa-chart-column"></i> Data Analytics & BI</h3>
+          <div class="skill-tags">
+            <span class="skill-pill"><i class="fa-solid fa-chart-simple"></i> Power BI</span>
+            <span class="skill-pill"><i class="fa-solid fa-table-cells"></i> Tableau</span>
+            <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> TIBCO Spotfire</span>
+            <span class="skill-pill"><i class="fa-solid fa-file-excel"></i> Advanced Excel</span>
+            <span class="skill-pill"><i class="fa-solid fa-diagram-next"></i> Data Pipelines</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
+          <div class="skill-tags">
+            <span class="skill-pill">Scikit-Learn</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">Pandas & NumPy</span>
+            <span class="skill-pill">Isolation Forest</span>
+            <span class="skill-pill">Autoencoders</span>
+            <span class="skill-pill">Random Forest & SVM</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <h3><i class="fa-solid fa-server"></i> Databases & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Elasticsearch</span>
+            <span class="skill-pill">NoSQL</span>
+            <span class="skill-pill">SAP ERP</span>
+            <span class="skill-pill">Git & GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Professional Work Experience</h2>
+        <p>Enterprise exposure across Government of India organizations & tech research institutes</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="card-meta">
+              <span class="badge-role">MIS Apprenticeship</span>
+              <span class="date-badge"><i class="fa-solid fa-calendar"></i> Apr 2024 – Mar 2025</span>
+            </div>
+            <h3>Data Analyst Trainee – MIS</h3>
+            <h4>Hindustan Petroleum Corporation Limited (HPCL) | Trichy, India</h4>
+            <ul class="timeline-list">
+              <li>Consolidated large datasets across <b>SAP, CRIS, and Spotfire</b> to enable executive business reporting.</li>
+              <li>Analyzed sales performance for <b>MSHSD, Turbojet, E20, and lubricants</b>, tracking account outstanding.</li>
+              <li>Calculated market share by comparing Dryout reports against actual sales metrics using <b>SQL and Excel</b>.</li>
+              <li>Architected interactive <b>Power BI dashboards</b> with customized SQL queries, accelerating turnaround by <b>35%</b>.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-card">
+            <div class="card-meta">
+              <span class="badge-role">ML / DL Internship</span>
+              <span class="date-badge"><i class="fa-solid fa-calendar"></i> Jan 2023 – Jun 2023</span>
+            </div>
+            <h3>Cybersecurity Intern – Applied ML</h3>
+            <h4>Centre for Development of Advanced Computing (C-DAC) | Chennai, India</h4>
+            <ul class="timeline-list">
+              <li>Built network log analysis algorithms for <b>User & Entity Behavior Analytics (UEBA)</b> using Isolation Forest & Autoencoders.</li>
+              <li>Engineered end-to-end data ingestion, preprocessing, and deployment pipelines using <b>Python, NoSQL, and Elasticsearch</b>.</li>
+              <li>Enhanced threat detection accuracy by <b>25%</b> and reduced false positive alerts by <b>40%</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p>Real-world applications in predictive modeling, fraud detection, and protocol design</p>
+      </div>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="glass-card project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-car project-icon"></i>
+            <span class="metric-tag">R² = 0.91</span>
+          </div>
+          <h3>Vehicle Performance Analyzer</h3>
+          <p>Random Forest Regression model predicting vehicle engine performance telemetry metrics, deployed via Flask.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Scikit-Learn</span>
+            <span>Flask</span>
+            <span>Regression</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Rohit-Jha-D" target="_blank" class="btn-link">View Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-credit-card project-icon"></i>
+            <span class="metric-tag">F1 = 0.92</span>
+          </div>
+          <h3>Credit Card Fraud Detection</h3>
+          <p>Support Vector Machine (SVM) fraud classifier with extensive feature engineering and class imbalance handling.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>SVM</span>
+            <span>Pandas</span>
+            <span>EDA</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Rohit-Jha-D" target="_blank" class="btn-link">View Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-shield-virus project-icon"></i>
+            <span class="metric-tag">-40% False Positives</span>
+          </div>
+          <h3>UEBA Anomaly Detection Engine</h3>
+          <p>Deep Learning Autoencoder & Isolation Forest network log threat detector for geographic and lateral movement anomalies.</p>
+          <div class="project-tech">
+            <span>Autoencoders</span>
+            <span>Elasticsearch</span>
+            <span>NoSQL</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Rohit-Jha-D" target="_blank" class="btn-link">View Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card project-card">
+          <div class="project-header">
+            <i class="fa-solid fa-network-wired project-icon"></i>
+            <span class="metric-tag">VANET SEMA</span>
+          </div>
+          <h3>VANETs Authenticated Key Protocol</h3>
+          <p>Cryptographically secure routing and key-agreement protocol implemented for vehicular networks using Java & MySQL.</p>
+          <div class="project-tech">
+            <span>Java</span>
+            <span>MySQL</span>
+            <span>VANETs</span>
+            <span>Cryptography</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/Rohit-Jha-D" target="_blank" class="btn-link">View Repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Visual Demos & Charts -->
+  <section id="analytics" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Interactive Analytics Demos</h2>
+        <p>Live simulations of analytics turnaround improvement & machine learning anomaly scores</p>
+      </div>
+
+      <div class="charts-wrapper">
+        <div class="glass-card chart-card">
+          <h3><i class="fa-solid fa-chart-line"></i> Turnaround Time Reduction (HPCL Dashboarding)</h3>
+          <div class="canvas-container">
+            <canvas id="turnaroundChart"></canvas>
+          </div>
+        </div>
+
+        <div class="glass-card chart-card">
+          <h3><i class="fa-solid fa-chart-area"></i> UEBA Anomaly Detection vs Threshold (C-DAC)</h3>
+          <div class="canvas-container">
+            <canvas id="anomalyChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-box glass-card">
+        <h2>Let's Build Something Data-Driven Together</h2>
+        <p>Open for Data Analyst, Business Intelligence, and Data Science opportunities.</p>
+        
+        <div class="contact-buttons">
+          <a href="mailto:rjha13b@gmail.com" class="btn-primary">
+            <i class="fa-solid fa-envelope"></i> rjha13b@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/rohit-jha-d" target="_blank" class="btn-secondary">
+            <i class="fa-brands fa-linkedin"></i> linkedin.com/in/rohit-jha-d
+          </a>
+          <a href="tel:+916382074117" class="btn-secondary">
+            <i class="fa-solid fa-phone"></i> +91-6382074117
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Rohit Jha D. Engineered with Senior UI/UX Precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

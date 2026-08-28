@@ -1,0 +1,182 @@
+<svg fill="none" width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes gradientShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        .li-banner-container {
+          width: 1584px;
+          height: 396px;
+          background: linear-gradient(-45deg, #090d16, #0f172a, #1e1035, #0a192f);
+          background-size: 400% 400%;
+          animation: gradientShift 15s ease infinite;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 80px 0 340px; /* Space on left for LinkedIn circular avatar */
+          position: relative;
+          overflow: hidden;
+          font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+          box-sizing: border-box;
+        }
+
+        .mesh-grid {
+          position: absolute;
+          inset: 0;
+          background-image: 
+            linear-gradient(to right, rgba(0, 242, 254, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 242, 254, 0.04) 1px, transparent 1px);
+          background-size: 40px 40px;
+        }
+
+        .glow-1 {
+          position: absolute;
+          width: 350px;
+          height: 350px;
+          background: #00f2fe;
+          filter: blur(120px);
+          opacity: 0.25;
+          top: -80px;
+          right: 20%;
+        }
+
+        .glow-2 {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background: #7928ca;
+          filter: blur(110px);
+          opacity: 0.3;
+          bottom: -60px;
+          right: 5%;
+        }
+
+        .banner-text-left {
+          position: relative;
+          z-index: 10;
+        }
+
+        .li-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 6px 18px;
+          background: rgba(0, 242, 254, 0.1);
+          border: 1px solid rgba(0, 242, 254, 0.3);
+          border-radius: 50px;
+          color: #00f2fe;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          margin-bottom: 12px;
+        }
+
+        .li-name {
+          font-size: 44px;
+          font-weight: 800;
+          margin: 0 0 6px 0;
+          color: #ffffff;
+          letter-spacing: 1px;
+        }
+
+        .li-title {
+          font-size: 22px;
+          color: #00f2fe;
+          margin: 0 0 16px 0;
+          font-weight: 600;
+        }
+
+        .li-highlights {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        .li-tag {
+          padding: 6px 14px;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 6px;
+          color: #cbd5e1;
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .banner-info-right {
+          position: relative;
+          z-index: 10;
+          text-align: right;
+          background: rgba(15, 23, 42, 0.6);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(0, 242, 254, 0.2);
+          border-radius: 16px;
+          padding: 24px 32px;
+        }
+
+        .contact-item {
+          font-size: 15px;
+          color: #e2e8f0;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 10px;
+        }
+
+        .contact-item:last-child {
+          margin-bottom: 0;
+        }
+
+        .contact-accent {
+          color: #00f2fe;
+          font-weight: 600;
+        }
+      </style>
+
+      <div class="li-banner-container">
+        <div class="mesh-grid"></div>
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+
+        <div class="banner-text-left">
+          <div class="li-badge">
+            <span>DATA ANALYTICS &amp; BUSINESS INTELLIGENCE</span>
+          </div>
+          <h1 class="li-name">ROHIT JHA D</h1>
+          <p class="li-title">Data Analyst | BI Specialist | ML Developer</p>
+          
+          <div class="li-highlights">
+            <span class="li-tag">📊 Power BI &amp; SQL</span>
+            <span class="li-tag">🐍 Python ML &amp; Anomaly Detection</span>
+            <span class="li-tag">🏛️ Ex-HPCL MIS Trainee</span>
+            <span class="li-tag">🛡️ C-DAC ML Intern</span>
+          </div>
+        </div>
+
+        <div class="banner-info-right">
+          <div class="contact-item">
+            <span>rjha13b@gmail.com</span>
+            <span class="contact-accent">📧</span>
+          </div>
+          <div class="contact-item">
+            <span>github.com/Rohit-Jha-D</span>
+            <span class="contact-accent">💻</span>
+          </div>
+          <div class="contact-item">
+            <span>linkedin.com/in/rohit-jha-d</span>
+            <span class="contact-accent">🔗</span>
+          </div>
+          <div class="contact-item">
+            <span>Chennai, Tamil Nadu, India</span>
+            <span class="contact-accent">📍</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
