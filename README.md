@@ -7,7 +7,9 @@
 </p>
 
 <p align="center">
+  <a href="https://rohit-jha-d.github.io/Rohit-Jha-D/"><img src="https://img.shields.io/badge/Portfolio-Live-10b981?style=for-the-badge&logo=githubpages&logoColor=white"/></a>
   <a href="mailto:rjha13b@gmail.com"><img src="https://img.shields.io/badge/Email-rjha13b@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/rohit-jha-d"><img src="https://img.shields.io/badge/LinkedIn-rohit--jha--d-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/Rohit-Jha-D"><img src="https://img.shields.io/badge/GitHub-Rohit--Jha--D-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
@@ -72,8 +74,9 @@
 
 ## 🌐 Portfolio
 
-My interactive portfolio (project deck, career timeline, resumes) is in this repo as [`index.html`](./index.html).
-To view it live, enable **GitHub Pages** (Settings → Pages → Deploy from `main` / root) and it will be served at `https://rohit-jha-d.github.io/Rohit-Jha-D/`.
+**👉 [View my live portfolio](https://rohit-jha-d.github.io/Rohit-Jha-D/)** — interactive project deck, career timeline and downloadable resumes (Data Analyst, Data Scientist / ML Engineer, Cybersecurity Analyst).
+
+The source is in this repo: [`index.html`](./index.html) with assets in [`assets/`](./assets).
 
 ## 📬 Let's Connect
 
