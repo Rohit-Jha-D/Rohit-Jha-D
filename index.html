@@ -377,6 +377,7 @@ section.sec { padding: 64px 0; border-top: 1px solid var(--line); }
   pointer-events: none;
 }
 #toast.on { opacity: 1; transform: translateY(0); }
+@media (max-width: 600px) { #toast { left: 16px; right: 16px; bottom: 16px; text-align: center; } }
 
 /* Resume dropdown */
 .resume-menu { position: relative; }
@@ -454,6 +455,8 @@ section.sec { padding: 64px 0; border-top: 1px solid var(--line); }
 .profile-frame:hover{border-color:rgba(160,190,255,.22);box-shadow:0 -8px 36px rgba(70,140,255,.2),12px 8px 46px rgba(170,110,255,.12),-12px 14px 46px rgba(0,210,220,.1),0 24px 60px rgba(0,0,0,.6)}
 .profile-frame:hover .profile-img{transform:scale(1.02)}
 }
+.profile-frame.glow{border-color:rgba(160,190,255,.22);box-shadow:0 -8px 36px rgba(70,140,255,.2),12px 8px 46px rgba(170,110,255,.12),-12px 14px 46px rgba(0,210,220,.1),0 24px 60px rgba(0,0,0,.6)}
+.profile-frame.glow .profile-img{transform:scale(1.02)}
 @media (prefers-reduced-motion:reduce){.profile-frame,.profile-img{transition:none}}
 
 /* typing caption */
@@ -1219,6 +1222,25 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
     wm.style.setProperty('--y', '-400px');
   });
 
+  // Touch screens have no hover, so the light sweeps across the name on its own
+  if (matchMedia('(hover: none)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let t0 = null, touching = false, resumeAt = 0, visible = true;
+    new IntersectionObserver((es) => { visible = es[0].isIntersecting; }).observe(wm);
+    const touchWm = (e) => { const t = e.touches[0]; if (!t) return; touching = true; updateWordmark({ clientX: t.clientX, clientY: t.clientY }); };
+    wm.addEventListener('touchstart', touchWm, { passive: true });
+    wm.addEventListener('touchmove', touchWm, { passive: true });
+    wm.addEventListener('touchend', () => { touching = false; resumeAt = performance.now() + 1500; }, { passive: true });
+    (function sweep(now) {
+      requestAnimationFrame(sweep);
+      if (!visible || touching || now < resumeAt) return;
+      if (t0 === null) t0 = now;
+      const r = wm.getBoundingClientRect();
+      const p = ((now - t0) / 5200) % 1;
+      wm.style.setProperty('--x', (-0.2 * r.width + p * 1.4 * r.width) + 'px');
+      wm.style.setProperty('--y', (r.height * 0.5) + 'px');
+    })(0);
+  }
+
   // Custom Cursor
   const cd = document.getElementById('cd');
   const cr = document.getElementById('cr');
@@ -1245,13 +1267,35 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
 
   // Copy Email Toast
   const toast = document.getElementById('toast');
-  document.getElementById('copyBtn').onclick = () => {
+  // Copy works on phones too: clipboard API first, then a textarea fallback for in-app browsers
+  async function copyText(text) {
+    try {
+      if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; }
+    } catch (err) { /* fall through to the fallback */ }
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;font-size:16px;';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+      const ok = document.execCommand('copy');
+      ta.remove();
+      return ok;
+    } catch (err) { return false; }
+  }
+  let toastTimer = 0;
+  function showToast(msg, ms) {
+    toast.textContent = msg;
+    toast.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('on'), ms);
+  }
+  document.getElementById('copyBtn').onclick = async () => {
     const email = 'rjha13b@gmail.com';
-    navigator.clipboard.writeText(email).then(() => {
-      toast.textContent = `Copied ${email}!`;
-      toast.classList.add('on');
-      setTimeout(() => toast.classList.remove('on'), 2400);
-    });
+    const ok = await copyText(email);
+    if (ok) showToast(`Copied ${email}!`, 2400);
+    else showToast(`Email: ${email} (press and hold to copy)`, 5000);
   };
 
   const resumeMenu = document.getElementById('resumeMenu');
@@ -1343,13 +1387,13 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
     }
   `;
 
-  const VS = `precision highp float;attribute vec2 aRef;uniform float uProjF,uAspect,uCamDist,uPointScale,uRingRadius,uRingWidth,uRingWidth2,uTurb,uTime;uniform vec2 uRingPos;varying vec2 vLocalPos;varying float vScale;varying float vEnergy;` + NOISE + FT + `
+  const VS = `precision highp float;attribute vec2 aRef;uniform float uProjF,uS,uAspect,uCamDist,uPointScale,uRingRadius,uRingWidth,uRingWidth2,uTurb,uTime;uniform vec2 uRingPos;varying vec2 vLocalPos;varying float vScale;varying float vEnergy;` + NOISE + FT + `
     void main(){
       vec2 disp; float t; float t2;
       fieldTerms(aRef,uRingPos,uTime*0.5,uRingRadius,uRingWidth,uRingWidth2,uTurb,disp,t,t2);
       vLocalPos=aRef+disp; vScale=t; vEnergy=t*0.5;
       vec2 world=vLocalPos*5.0;
-      gl_Position=vec4(world.x*uProjF/uAspect,world.y*uProjF,0.0,uCamDist);
+      gl_Position=vec4(world.x*uProjF*uS/uAspect,world.y*uProjF*uS,0.0,uCamDist);
       gl_PointSize=max(vScale,0.0)*6.5*uPointScale;
     }
   `;
@@ -1451,6 +1495,20 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
     ptr.over = true;
   });
 
+  // Touch screens: the ring follows your finger, then drifts again after you let go
+  let touchTimer = 0;
+  function touchPtr(e) {
+    const t = e.touches[0]; if (!t) return;
+    ptr.x = (t.clientX / W)*2 - 1;
+    ptr.y = -((t.clientY / H)*2 - 1);
+    ptr.over = true; clearTimeout(touchTimer);
+  }
+  function touchEnd() { clearTimeout(touchTimer); touchTimer = setTimeout(() => { ptr.over = false; }, 1400); }
+  window.addEventListener('touchstart', touchPtr, { passive: true });
+  window.addEventListener('touchmove', touchPtr, { passive: true });
+  window.addEventListener('touchend', touchEnd, { passive: true });
+  window.addEventListener('touchcancel', touchEnd, { passive: true });
+
   const FOV = 40, PF = 1 / Math.tan((FOV*Math.PI)/360), CAM = 1.6;
 
   function render(now){
@@ -1461,14 +1519,15 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
     wander += dt * 0.12;
 
     const asp = W / H;
+    const S = Math.min(1, asp);
     const wx = (vn(wander*0.66, 94.234) - 0.5)*2;
     const wy = (vn(wander*0.75, 21.028) - 0.5)*2;
 
     follow += ((ptr.over ? 1 : 0) - follow) * (1 - Math.pow(1 - 0.08, dt * 60));
     let tx = wx * 0.2, ty = wy * 0.1;
     if (follow > 1e-4) {
-      const cx = (ptr.x * asp * CAM / PF)*0.175 + wx*0.01;
-      const cy = (ptr.y * CAM / PF)*0.175 + wy*0.01;
+      const cx = (ptr.x * asp * CAM / (PF * S))*0.175 + wx*0.01;
+      const cy = (ptr.y * CAM / (PF * S))*0.175 + wy*0.01;
       tx = tx + (cx - tx)*follow;
       ty = ty + (cy - ty)*follow;
     }
@@ -1482,9 +1541,10 @@ a.mq-item:hover,a.mq-item:focus-visible{border-color:var(--em);background:rgba(1
     gl.clear(gl.COLOR_BUFFER_BIT);
 
     gl.uniform1f(U('uProjF'), PF);
+    gl.uniform1f(U('uS'), S);
     gl.uniform1f(U('uAspect'), asp);
     gl.uniform1f(U('uCamDist'), CAM);
-    gl.uniform1f(U('uPointScale'), (W / 2000) * 0.6 * dpr * 0.5);
+    gl.uniform1f(U('uPointScale'), (Math.max(W, 1000) / 2000) * 0.6 * dpr * 0.5);
     gl.uniform2f(U('uRingPos'), ring.x, ring.y);
     gl.uniform1f(U('uRingRadius'), 0.12 + Math.sin(st)*0.03 + Math.cos(st*3)*0.02);
     gl.uniform1f(U('uRingWidth'), 0.09);
@@ -1528,6 +1588,15 @@ document.querySelectorAll('[data-cv]').forEach(a => {
     const rm = document.getElementById('resumeMenu'); if (rm) rm.open = false;
   });
 });
+</script>
+<script>
+(function(){var f=document.querySelector('.profile-frame');
+if(!f||!matchMedia('(hover: none)').matches||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var tm;function pulse(ms){f.classList.add('glow');clearTimeout(tm);tm=setTimeout(function(){f.classList.remove('glow');f.style.transform=''},ms)}
+new IntersectionObserver(function(es){if(es[0].isIntersecting)pulse(2200)},{threshold:.6}).observe(f);
+function tilt(e){var t=e.touches[0];if(!t)return;var r=f.getBoundingClientRect(),x=(t.clientX-r.left)/r.width-.5,y=(t.clientY-r.top)/r.height-.5;f.classList.add('glow');clearTimeout(tm);f.style.transform='perspective(900px) rotateX('+(-y*4)+'deg) rotateY('+(x*4)+'deg) scale(1.015)'}
+f.addEventListener('touchstart',tilt,{passive:true});f.addEventListener('touchmove',tilt,{passive:true});f.addEventListener('touchend',function(){pulse(900)},{passive:true});
+})();
 </script>
 </body>
 </html>
